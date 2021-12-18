@@ -1,0 +1,26 @@
+<mat-toolbar style="width: 80vw; margin: 0 auto; height: 15vh; background-color: rgb(251, 255, 195); margin-top: 5px; margin-bottom: 5px;">
+    <span>Click a button to see that nation's art:</span>
+    <div *ngFor="let n of nationDetails, let i = index" style="margin: 0 auto;">
+        <button mat-fab color='primary' style="width: 5vw; height: 5vw;" (click)="nationSelected($event)">
+            {{n.nation}}
+        </button>
+    </div>
+</mat-toolbar>
+<div *ngIf="selectedNation">
+    <h1 style="margin-top: 15px; margin-bottom: 0px; font-size: 25px;">Selected Nation: {{selectedNation}}</h1>
+    <br>
+    <div *ngFor="let x of arr1" class="output-area">
+        Title: {{x.title}}
+        <br>
+        ID: {{x.id}}
+        <br>
+        Creator: {{x.creator}}
+        <br>
+        Creation Date : {{x.creation_date}}
+        <br>
+        Nation: {{x.nation}}
+        <br>
+        Description: {{x.description}}
+    </div>
+</div>
+

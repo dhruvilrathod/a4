@@ -1,0 +1,28 @@
+.my-details{
+    height: 30vh;
+    width: 35vw;
+    background-color: lemonchiffon;
+    left: 60vw;
+    top: 8vh;
+    position: absolute;
+    z-index: 100000;
+    display: flex;
+    box-shadow: 2px 2px 20px;
+}
+
+.right{
+    width: 25vw;
+    font-size: large;
+    margin: 10px 10px 10px 10px;
+}
+
+.left{
+    width: 15vw;
+}
+
+img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid;
+}

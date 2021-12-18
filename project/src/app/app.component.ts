@@ -10,7 +10,7 @@ import { NationFeaturedInterface } from './myInterfaces/nation-interface';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'A4';
+  title = 'A4doejane';
   data: MyDetailsInterFace = myData.myDetails;
   nation: NationFeaturedInterface[] = myData.nationsFeatured;
   artdetails: ArtDetailsInterface[] = myData.artDetails;
